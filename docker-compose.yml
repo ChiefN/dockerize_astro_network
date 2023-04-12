@@ -1,0 +1,14 @@
+services:
+  astromain:
+    build:
+      context: ./AstroMain
+      dockerfile: Dockerfile
+    image: astromain
+    ports:
+      - "80:80"
+  astrosecondary:
+    build:
+      context: ./astrosecondary
+      dockerfile: Dockerfile
+    image: astrosecondary
+
